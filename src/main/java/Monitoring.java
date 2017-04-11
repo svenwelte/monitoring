@@ -29,6 +29,7 @@ public class Monitoring implements Runnable {
 
     @Override
     public void run() {
+        logger.info(url + " wird überwacht, drücken Sie eine beliebige Taste um das Programm zu beenden...");
         while(true) {
             check();
             sleep();
